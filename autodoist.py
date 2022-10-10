@@ -633,6 +633,7 @@ def autodoist_magic(args, api, label_id, regen_labels_id):
 
                 # For all items in this section
                 for item in items:
+                    remove_label(item, label_id, overview_item_ids, overview_item_labels)
                     active_type = None  # Reset
 
                     # Possible nottes routine for the future
